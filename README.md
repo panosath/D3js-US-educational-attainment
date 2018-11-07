@@ -3,10 +3,13 @@
 ## Ονοματεπώνυμο: Αθανασιάδης Παναγιώτης
 ## Αριθμός μητρώου: Π2015167
 
-#Εργασία Ανάπτυξης:
+Εργασία Ανάπτυξης:
 
-  #Executable link: https://panosath.github.io/D3js-US-educational-attainment/
-  #Repository link: https://github.com/panosath/D3js-US-educational-attainment/tree/2015167
+
+Executable link: https://panosath.github.io/D3js-US-educational-attainment/
+
+Repository link: https://github.com/panosath/D3js-US-educational-attainment/tree/2015167
+
 
 _υπολοιπο readme_
 - [x] Δημιουργήστε ένα αντίγραφο (**fork**) του [αποθετηρίου](https://github.com/ioniodi/D3js-US-educational-attainment/) (**αποθετήριο της άσκησης** ή αλλιώς **αποθετήριο του κώδικα**).
