@@ -27,4 +27,3 @@
 * [Ελληνική Στατιστική Αρχή](http://www.statistics.gr/)
 * [Eurostat](http://ec.europa.eu/eurostat/)
 
-Η άσκηση βασίστηκε στο αποθετήριο: [https://github.com/afikanyati/4032censusviz](https://github.com/afikanyati/4032censusviz)
