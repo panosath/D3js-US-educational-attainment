@@ -8,7 +8,7 @@
 
 Executable link: https://panosath.github.io/D3js-US-educational-attainment/
 
-Repository link: https://github.com/panosath/D3js-US-educational-attainment/tree/2015167
+Repository link: https://github.com/panosath/D3js-US-educational-attainment/tree/master
 
 
 ## Χρήσιμοι σύνδεσμοι
