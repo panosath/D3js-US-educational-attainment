@@ -8,14 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-	<audio>
-		<source src="audio/beep.mp3"></source>
-		<source src="audio/beep.ogg"></source>
-	</audio>
+	var audio = document.getElementById("beep");
+		audio.play();
   <header>
        <nav>
     <ul>
-	var audio = $("#mySoundClip")[0];
+	var audio = $("#beep");
 		$("nav a").mouseenter(function() {
 		<li><a href="#top" >Top</a></li>
   		audio.play();
