@@ -272,7 +272,7 @@ form {
 	  stroke-width: 3px;
 	}
 	.grandparent:hover rect {
-	  fill: #DCDCDC;
+	  fill: #FF6347;
 	}
 	.children rect.parent,
 	.grandparent rect {
