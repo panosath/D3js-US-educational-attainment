@@ -8,10 +8,19 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
+	<audio>
+		<source src="audio/beep.mp3"></source>
+		<source src="audio/beep.ogg"></source>
+	</audio>
   <header>
        <nav>
     <ul>
-      <li><a href="#top" >Top</a></li>
+	var audio = $("#mySoundClip")[0];
+$("nav a").mouseenter(function() {
+  audio.play();
+	    <li><a href="#top" >Top</a></li>
+});
+      
       <li><a href="#national">National</a></li>
       <li><a href="#regional">Regional</a></li>
       <li><a href="#state">State-Level</a></li>
