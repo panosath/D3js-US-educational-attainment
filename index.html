@@ -7,16 +7,12 @@
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <source src="beep.mp3"></source>
-    <source src="beep.ogg"></source>
-    <style type="text/css">audio {display: none;}</style>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 	<header>
 		<nav>
-    <ul id="nav-two" class="nav">
-      <li><a href="#top">Top</a>
-	    <audio id="sound" controls preload="auto"><source src="beep.mp3" controls></source></audio></li>
+    <ul>
+      <li><a href="#top">Top</a></li>
       <li><a href="#national">National</a></li>
       <li><a href="#regional">Regional</a></li>
       <li><a href="#state">State-Level</a></li>
@@ -71,7 +67,7 @@
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
 <script>
-	//start of added stuff
+	/*start of added stuff
 	$("#nav-two a")
   .each(function(i) {
     if (i != 0) {
@@ -86,7 +82,30 @@
     $("#sound" + $(this).data("beep"))[0].play();
   });
 $("#sound").attr("id", "sound0");
-	//end of added stuff
+	//end of added stuff*/
+	//2nd attempt
+	var beepOne = $("#beep-one")[0];
+		$("#rimshot-hover-sound")
+		.mouseenter(function() 
+	{
+		beepOne.play();
+	});
+	var rimShotAudio = document.getElementById("beep-one"); 
+		function playRim() 
+	{ 
+    		rimShotAudio.play(); 
+	}
+	<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
+				<source src="beep.mp3"></source>
+				<source src="beep.ogg"></source>
+				Your browser isn't invited for super fun time.
+			</audio>
+	<a id="rimshot-hover-sound" href="#">Top</a>
+	<a id="rimshot-hover-sound" href="#">National</a>
+	<a id="rimshot-hover-sound" href="#">Regional</a>
+	<a id="rimshot-hover-sound" href="#">State-Level</a>
+	//2nd attempt end
+item.addEventListener('mouseover', rimShotAudio.playRim, false);
     $( document ).ready(function() {
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
