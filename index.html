@@ -12,10 +12,10 @@
 	<header>
 		<nav>
     <ul>
-      <li><a href="#top">Top</a></li>
-      <li><a href="#national">National</a></li>
-      <li><a href="#regional">Regional</a></li>
-      <li><a href="#state">State-Level</a></li>
+      <li><a href="#top" onmousehover="beep.play()">Top</a></li>
+      <li><a href="#national" onmousehover="beep.play()">National</a></li>
+      <li><a href="#regional" onmousehover="beep.play()">Regional</a></li>
+      <li><a href="#state" onmousehover="beep.play()">State-Level</a></li>
     <ul>
 	    	</nav>
 	</header>
@@ -87,7 +87,7 @@
   });
 $("#sound").attr("id", "sound0");
 	//end of added stuff*/
-			//2nd attempt
+			/*2nd attempt
 	var beepOne = $("#beep-one")[0];
 		$("#rimshot-hover-sound")
 		.mouseenter(function() 
@@ -100,8 +100,10 @@ $("#sound").attr("id", "sound0");
     		rimShotAudio.play(); 
 	}
 item.addEventListener('mouseover', rimShotAudio.playRim, false);
-	//2nd attempt end
-
+	//2nd attempt end*/
+//3rd attempt
+	var beep = new Audio();
+	beep.scr = beep.mp3;
     $( document ).ready(function() {
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
