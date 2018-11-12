@@ -103,14 +103,7 @@ $("#sound").attr("id", "sound0");
    Should be equal the the height of the header
  */
 </script>
-
-</body>
-			<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
-				<source src="beep.mp3"></source>
-				<source src="beep.ogg"></source>
-			</audio>
-</html>
-	//2nd attempt
+		//2nd attempt
 	var beepOne = $("#beep-one")[0];
 		$("#rimshot-hover-sound")
 		.mouseenter(function() 
@@ -124,3 +117,10 @@ $("#sound").attr("id", "sound0");
 	}
 item.addEventListener('mouseover', rimShotAudio.playRim, false);
 	//2nd attempt end
+
+</body>
+			<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
+				<source src="beep.mp3"></source>
+				<source src="beep.ogg"></source>
+			</audio>
+</html>
