@@ -66,44 +66,11 @@
 <script src="assets/scripts/script_1.js"></script>
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
-	<a id="rimshot-hover-sound" href="#top">Top</a>
-	<a id="rimshot-hover-sound" href="#national">National</a>
-	<a id="rimshot-hover-sound" href="#regional">Regional</a>
-	<a id="rimshot-hover-sound" href="#state">State-Level</a>
 <script>
-	/*start of added stuff
-	$("#nav-two a")
-  .each(function(i) {
-    if (i != 0) {
-      $("#sound")
-        .clone()
-        .attr("id", "sound" + i)
-        .appendTo($(this).parent());
-    }
-    $(this).data("beep", i);
-  })
-  .mouseenter(function() {
-    $("#sound" + $(this).data("beep"))[0].play();
-  });
-$("#sound").attr("id", "sound0");
-	//end of added stuff*/
-			/*2nd attempt
-	var beepOne = $("#beep-one")[0];
-		$("#rimshot-hover-sound")
-		.mouseenter(function() 
-	{
-		beepOne.play();
-	});
-	var rimShotAudio = document.getElementById("beep-one"); 
-		function playRim() 
-	{ 
-    		rimShotAudio.play(); 
-	}
-item.addEventListener('mouseover', rimShotAudio.playRim, false);
-	//2nd attempt end*/
-//3rd attempt
+	//mouseover sound attempt
 	var beep = new Audio();
 	beep.scr = "beep.mp3";
+	
     $( document ).ready(function() {
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
@@ -122,8 +89,4 @@ item.addEventListener('mouseover', rimShotAudio.playRim, false);
 
 
 </body>
-			<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
-				<source src="beep.mp3"></source>
-				<source src="beep.ogg"></source>
-			</audio>
 </html>
