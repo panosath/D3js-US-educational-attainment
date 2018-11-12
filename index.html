@@ -7,9 +7,8 @@
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <source src="audio/beep.mp3"></source>
-    <source src="audio/beep.ogg"></source>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <source src="beep.mp3"></source>
+    <source src="beep.ogg"></source>
     <style type="text/css">audio {display: none;}</style>
 </head>
 	<header>
@@ -71,6 +70,22 @@
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
 <script>
+	//start of added stuff
+	$("#nav-two a")
+  .each(function(i) {
+    if (i != 0) {
+      $("#sound")
+        .clone()
+        .attr("id", "sound" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beep", i);
+  })
+  .mouseenter(function() {
+    $("#sound" + $(this).data("beep"))[0].play();
+  });
+$("#sound").attr("id", "sound0");
+	//end of added stuff
     $( document ).ready(function() {
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
