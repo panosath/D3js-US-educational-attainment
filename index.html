@@ -12,18 +12,12 @@
 </head>
 	<script>
 
-// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
-// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
-
-//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
-//** Call: uniquevar.playclip() to play sound
-
-var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	var html5_audiotypes={ //define list of audio file extensions and their associated audio types:
 	"mp3": "audio/mpeg",
 	"mp4": "audio/mp4",
 	"ogg": "audio/ogg",
 	"wav": "audio/wav"
-}
+	}
 
 function createsoundbite(sound){
 	var html5audio=document.createElement('audio')
@@ -51,7 +45,6 @@ function createsoundbite(sound){
 //Initialize two sound clips with 1 fallback file each:
 
 var mouseoversound=createsoundbite("beep.ogg", "beep.mp3")
-var clicksound=createsoundbite("beep.ogg", "beep.mp3")
 
 </script>
 	<header>
@@ -112,9 +105,6 @@ var clicksound=createsoundbite("beep.ogg", "beep.mp3")
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
 <script>
-	/*mouseover sound attempt
-	var beep = new Audio();
-	beep.scr = "beep.mp3";*/
 	
     $( document ).ready(function() {
       $(window).scroll(function(){
@@ -136,9 +126,5 @@ var clicksound=createsoundbite("beep.ogg", "beep.mp3")
 
 
 </body>
-	/*<audio>
-		<source src="beep.mp3"></source>
-		<source src="beep.ogg"></source>
-	</audio>
-	<div id="sounddiv"><bgsound id="sound"></div>*/
+	
 </html>
