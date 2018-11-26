@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script type="text/javascript" src="mousehover-sound.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
 	<script>
 
@@ -46,7 +47,11 @@ function createsoundbite(sound){
 
 var mouseoversound=createsoundbite("beep.ogg", "beep.mp3")
 
-</script>
+	</script>
+	<script> $(document).ready(function(){ $("h1, h2, label").mouseenter(function()
+		{ responsiveVoice.cancel(); responsiveVoice.speak($(this).text(), 'UK English Male'); }); $("h1, h2, label").mouseleave(function()
+		{ responsiveVoice.cancel(); }); }); 
+	</script>
 	<header>
 		<nav>
 		<ul class="navbar-nav ml-auto">
