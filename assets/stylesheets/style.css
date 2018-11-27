@@ -37,7 +37,7 @@ header h1 {
   color: #fff;
 }
 
-.ShowHideH1Function{
+button .ShowHideH1Function{
   position: absolute;
   top: 82px; 
   left: 50px;
