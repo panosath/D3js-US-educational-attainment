@@ -37,10 +37,10 @@ header h1 {
   color: #fff;
 }
 
-button .ShowHideH1Function{
+.ShowHideH1Function{
   position: absolute;
-  top: 82px; 
-  left: 50px;
+  top: 650px; 
+  left: 500px;
 }
 
 .fixed-header {
