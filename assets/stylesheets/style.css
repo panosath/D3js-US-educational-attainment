@@ -38,8 +38,8 @@ header h1 {
 }
 
 #ShowHideH1Function{
-    margin-left: 200px;
-    margin-top: 80px;  
+    top: 65px; 
+    left: 100px;
     border: none;
     color: white;   
     font-size:14px;
