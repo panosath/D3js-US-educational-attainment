@@ -37,10 +37,13 @@ header h1 {
   color: #fff;
 }
 
-.ShowHideH1Function{
-  position: absolute;
-  top: 650px; 
-  left: 500px;
+#ShowHideH1Function{
+    margin-left: 200px;
+    margin-top: 80px;  
+    border: none;
+    color: white;   
+    font-size:14px;
+    font-weight:700;
 }
 
 .fixed-header {
