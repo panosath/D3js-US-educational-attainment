@@ -37,14 +37,7 @@ header h1 {
   color: #fff;
 }
 
-#ShowHideH1Function{
-    top: 65px; 
-    left: 100px;
-    border: none;
-    color: white;   
-    font-size:14px;
-    font-weight:700;
-}
+
 
 .fixed-header {
   position: fixed;
