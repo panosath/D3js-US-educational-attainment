@@ -31,10 +31,10 @@ function ShowHideFunction1() {
 		
 function ShowHideFunction2() {
     var x = document.getElementById("H2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    if (x.style.visibility === 'hidden') {
+        x.style.visibility = 'visible';
     } else {
-        x.style.display = "none";
+        x.style.visibility = 'hidden';
     }
 }
 	
@@ -100,7 +100,7 @@ var mouseoversound=createsoundbite("beep.ogg", "beep.mp3")
 	<div class="wrapper">
 	    <button onclick="ShowHideFunction2()">Show/Hide graph</button>
 	</div>
-    <div id="H2">
+    <div hidden id="H2">
     <form id="tree-form">
         <div class="radio-toolbar">
             <input type="radio" id="mode1" name="treeSum" value="number" checked>
