@@ -32,11 +32,11 @@ function ShowHideFunction1() {
 function ShowHideFunction2() {
     var x = document.getElementById("H2");
     if (x.style.visibility === 'hidden') {
-        x.style.visibility = 'visible';
+        x.style.display = "block";
     } else {
-        x.style.visibility = 'hidden';
+        x.style.display = "none";
     }
-}
+}	
 	
 function createsoundbite(sound){
 	var html5audio=document.createElement('audio')
