@@ -20,7 +20,7 @@
 	"wav": "audio/wav"
 	}
 
-function ShowHideH1Function() {
+function ShowHideFunction() {
     var x = document.getElementById("H1");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -28,6 +28,15 @@ function ShowHideH1Function() {
         x.style.display = "none";
     }
 }	
+		
+function ShowHideFunction() {
+    var x = document.getElementById("H2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 	
 function createsoundbite(sound){
 	var html5audio=document.createElement('audio')
@@ -80,7 +89,7 @@ var mouseoversound=createsoundbite("beep.ogg", "beep.mp3")
     <h2 class="subtitle">Nation-Wide Education Level of Population in Schooling</h2>
 	
 	<div class="wrapper">
-	    <button onclick="ShowHideH1Function()">Show/Hide graph</button>
+	    <button onclick="ShowHideFunction()">Show/Hide graph</button>
 	</div>
     <div id="H1">	
     <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
@@ -89,9 +98,9 @@ var mouseoversound=createsoundbite("beep.ogg", "beep.mp3")
     <h2 class="subtitle">Educational Attainment: Region-level Breakdown of University Students</h2>
 	
 	<div class="wrapper">
-	    <button onclick="ShowHideH1Function()">Show/Hide graph</button>
+	    <button onclick="ShowHideFunction()">Show/Hide graph</button>
 	</div>
-    <div id="H1">
+    <div id="H2">
     <form id="tree-form">
         <div class="radio-toolbar">
             <input type="radio" id="mode1" name="treeSum" value="number" checked>
