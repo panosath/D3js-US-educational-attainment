@@ -37,7 +37,16 @@ header h1 {
   color: #fff;
 }
 
+/*button css properties*/
+.wrapper {
+    text-align: center;
+}
 
+.button {
+    position: absolute;
+    top: 50%;
+}
+/*end of css button*/
 
 .fixed-header {
   position: fixed;
